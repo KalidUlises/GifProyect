@@ -3,8 +3,9 @@
     <hr class="text-white">
 
     <div class="list-group list-reset">
-      <button class="list-group-item list-group-item-action">
-        Algo de cambio
+      <button *ngFor="let tag of tagsHistory"
+        class="list-group-item list-group-item-action" >
+        {{ tag | titlecase}}
       </button>
     </div>
 
